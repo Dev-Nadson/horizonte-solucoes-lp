@@ -1,0 +1,24 @@
+import { Logo } from "./Logo";
+
+export function Footer() {
+  return (
+    <footer className="bg-navy-deep px-8 py-12">
+      <div className="mx-auto flex max-w-[1180px] flex-wrap items-center justify-between gap-5">
+        <div className="flex items-center gap-3">
+          <Logo variant="footer" size={38} />
+          <div className="leading-none">
+            <div className="text-base font-semibold text-white">
+              Horizonte Inovação Assistiva
+            </div>
+            <div className="mt-[3px] text-xs font-normal text-[#8399B2]">
+              Transformando o desafio em solução
+            </div>
+          </div>
+        </div>
+        <div className="text-[13px] text-[#8399B2]">
+          © 2026 Horizonte Inovação Assistiva. Todos os direitos reservados.
+        </div>
+      </div>
+    </footer>
+  );
+}
