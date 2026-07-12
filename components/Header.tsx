@@ -7,7 +7,7 @@ type WithChildren = { children: ReactNode; className?: string };
 export function Header({ children }: WithChildren) {
   return (
     <header className="sticky top-0 z-50 border-b border-line bg-white/90 backdrop-blur-[10px]">
-      <nav className="mx-auto flex max-w-[1180px] items-center justify-between px-8 py-4">
+      <nav className="mx-auto flex max-w-295 items-center justify-between px-8 py-4">
         {children}
       </nav>
     </header>
@@ -41,7 +41,7 @@ export function HeaderTitle({ children }: WithChildren) {
 /** Assinatura em caixa alta abaixo do nome. */
 export function HeaderSubtitle({ children }: WithChildren) {
   return (
-    <span className="mt-[2px] block text-[10px] font-medium uppercase leading-none tracking-[.14em] text-orange">
+    <span className="mt-0.5 block text-[10px] font-medium uppercase leading-none tracking-[.14em] text-orange">
       {children}
     </span>
   );
@@ -49,7 +49,7 @@ export function HeaderSubtitle({ children }: WithChildren) {
 
 /** Container da navegação à direita. */
 export function HeaderNav({ children }: WithChildren) {
-  return <div className="flex items-center gap-[30px]">{children}</div>;
+  return <div className="flex items-center gap-7.5">{children}</div>;
 }
 
 /** Link de navegação (âncora). */

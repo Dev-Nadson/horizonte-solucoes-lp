@@ -15,7 +15,7 @@ const items = [
 
 export function ForWhomSection() {
   return (
-    <section id="paraquem" className="py-[104px]">
+    <section id="paraquem" className="py-26">
       <Container>
         <div className="grid grid-cols-[.9fr_1.1fr] items-center gap-14">
           <SectionHeader>
@@ -24,13 +24,13 @@ export function ForWhomSection() {
               Pensada para quem usa a bengala todos os dias
             </SectionHeaderTitle>
           </SectionHeader>
-          <div className="flex flex-col gap-[14px]">
+          <div className="flex flex-col gap-3.5">
             {items.map((item) => (
               <div
                 key={item}
-                className="flex items-center gap-[14px] text-[17px] text-[#33445B]"
+                className="flex items-center gap-3.5 text-[17px] text-[#33445B]"
               >
-                <span className="flex h-[26px] w-[26px] flex-shrink-0 items-center justify-center rounded-full bg-[#EAF0F5]">
+                <span className="flex h-6.5 w-6.5 flex-shrink-0 items-center justify-center rounded-full bg-[#EAF0F5]">
                   <IconCheck size={15} color="#1E3A5F" />
                 </span>
                 {item}

@@ -27,7 +27,7 @@ const benefits: Benefit[] = [
   },
   {
     title: "Alerta discreto",
-    text: "Vibração ou som suave — sem cobrir os ouvidos nem chamar atenção.",
+    text: "Vibração ou som suave - sem cobrir os ouvidos nem chamar atenção.",
     Icon: IconFlag,
     iconBg: "bg-[#F8EFE2]",
     iconColor: "#DE8A3E",
@@ -50,9 +50,9 @@ const benefits: Benefit[] = [
 
 export function BenefitsSection() {
   return (
-    <section id="beneficios" className="bg-surface py-[104px]">
+    <section id="beneficios" className="bg-surface py-26">
       <Container>
-        <SectionHeader className="mb-[52px] max-w-[660px]">
+        <SectionHeader className="mb-13 max-w-165">
           <SectionHeaderLabel>No dia a dia</SectionHeaderLabel>
           <SectionHeaderTitle>
             Mais segurança, sem abrir mão da rotina
@@ -63,7 +63,7 @@ export function BenefitsSection() {
           {benefits.map(({ title, text, Icon, iconBg, iconColor }) => (
             <div
               key={title}
-              className="flex gap-[18px] rounded-[20px] border border-line bg-white px-[30px] py-7"
+              className="flex gap-4.5 rounded-[20px] border border-line bg-white px-7.5 py-7"
             >
               <div
                 className={`flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-xl ${iconBg}`}
@@ -71,7 +71,7 @@ export function BenefitsSection() {
                 <Icon size={22} color={iconColor} />
               </div>
               <div>
-                <h3 className="m-0 mb-[6px] text-lg font-semibold text-navy">
+                <h3 className="m-0 mb-1.5 text-lg font-semibold text-navy">
                   {title}
                 </h3>
                 <p className="m-0 text-[15px] leading-[1.6] text-muted">{text}</p>

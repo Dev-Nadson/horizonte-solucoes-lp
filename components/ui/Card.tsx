@@ -8,7 +8,7 @@ type CardProps = {
 /** Base do card: fundo branco, borda e cantos arredondados. */
 export function Card({ children, className = "" }: CardProps) {
   return (
-    <div className={`rounded-[24px] border border-line bg-white ${className}`}>
+    <div className={`rounded-3xl border border-line bg-white ${className}`}>
       {children}
     </div>
   );

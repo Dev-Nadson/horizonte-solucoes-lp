@@ -7,7 +7,7 @@ import {
 
 export function AboutSection() {
   return (
-    <section id="sobre" className="py-[104px]">
+    <section id="sobre" className="py-26">
       <Container>
         <div className="grid grid-cols-[.85fr_1.15fr] items-center gap-16">
           <SectionHeader>
@@ -15,7 +15,7 @@ export function AboutSection() {
             <SectionHeaderTitle>Inovação com propósito humano</SectionHeaderTitle>
           </SectionHeader>
           <div>
-            <p className="m-0 mb-[22px] text-lg font-normal leading-[1.75] text-muted">
+            <p className="m-0 mb-5.5 text-lg font-normal leading-[1.75] text-muted">
               A Horizonte Inovação Assistiva nasce para aproximar tecnologia e
               pessoas. Acreditamos que a inovação só faz sentido quando amplia a
               autonomia, a dignidade e a participação de quem enfrenta barreiras no

@@ -12,7 +12,7 @@ type BadgeProps = {
 };
 
 const sizes: Record<BadgeSize, string> = {
-  sm: "text-[11.5px] px-[13px] py-[6px] rounded-[20px]",
+  sm: "text-[11.5px] px-3.25 py-1.5 rounded-[20px]",
   md: "text-[12.5px] px-4 py-2 rounded-[30px]",
 };
 
@@ -28,7 +28,7 @@ export function Badge({
     >
       {dotColor && (
         <span
-          className="h-[7px] w-[7px] rounded-full"
+          className="h-1.75 w-1.75 rounded-full"
           style={{ background: dotColor }}
         />
       )}

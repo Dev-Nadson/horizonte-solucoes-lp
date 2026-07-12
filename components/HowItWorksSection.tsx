@@ -7,7 +7,7 @@ import {
   SectionHeaderTitle,
   SectionHeaderDescription,
 } from "./ui/SectionHeader";
-import { IconChip, IconMic, IconSpeaker } from "./ui/icons";
+import { IconChip, IconSpeaker } from "./ui/icons";
 import { Radar } from "lucide-react";
 
 type IconProps = { size?: number; color?: string };
@@ -25,7 +25,7 @@ const steps: Step[] = [
   {
     number: "01",
     title: "Detecção",
-    text: "Sensores ultrassônicos emitem pulsos e medem o tempo de retorno para calcular a distância dos obstáculos em tempo real — à frente, acima e nas laterais superiores.",
+    text: "Sensores ultrassônicos emitem pulsos e medem o tempo de retorno para calcular a distância dos obstáculos em tempo real - à frente, acima e nas laterais superiores.",
     Icon: Radar,
     iconBg: "bg-[#EAF0F5]",
     iconColor: "#1E3A5F",
@@ -33,7 +33,7 @@ const steps: Step[] = [
   {
     number: "02",
     title: "Processamento",
-    text: "O microcontrolador ESP32 analisa as leituras, filtra ruído e decide — pela proximidade e direção — se o obstáculo representa risco e qual alerta acionar.",
+    text: "O microcontrolador ESP32 analisa as leituras, filtra ruído e decide - pela proximidade e direção - se o obstáculo representa risco e qual alerta acionar.",
     Icon: IconChip,
     iconBg: "bg-[#F8EFE2]",
     iconColor: "#DE8A3E",
@@ -50,9 +50,9 @@ const steps: Step[] = [
 
 export function HowItWorksSection() {
   return (
-    <section id="tecnologia" className="py-[104px]">
+    <section id="tecnologia" className="py-26">
       <Container>
-        <SectionHeader className="mb-14 max-w-[660px]">
+        <SectionHeader className="mb-14 max-w-165">
           <SectionHeaderLabel>A tecnologia por trás</SectionHeaderLabel>
           <SectionHeaderTitle>Três etapas, em fração de segundo</SectionHeaderTitle>
           <SectionHeaderDescription>
@@ -64,7 +64,7 @@ export function HowItWorksSection() {
           {steps.map(({ number, title, text, Icon, iconBg, iconColor }) => (
             <Card
               key={number}
-              className="px-8 py-[38px] shadow-[0_10px_30px_rgba(30,58,95,.05)]"
+              className="px-8 py-9.5 shadow-[0_10px_30px_rgba(30,58,95,.05)]"
             >
               <div className="mb-5 text-[15px] font-bold text-orange">{number}</div>
               <div
@@ -73,7 +73,7 @@ export function HowItWorksSection() {
                 <Icon size={28} color={iconColor} />
               </div>
               <CardBody>
-                <CardTitle className="mb-[10px] text-[21px]">{title}</CardTitle>
+                <CardTitle className="mb-2.5 text-[21px]">{title}</CardTitle>
                 <CardText className="text-[15.5px] leading-[1.65]">{text}</CardText>
               </CardBody>
             </Card>

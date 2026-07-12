@@ -14,32 +14,34 @@
   --font-sans: var(--font-poppins), sans-serif;
 }
 
-* {
-  box-sizing: border-box;
-}
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
 
-html {
-  scroll-behavior: smooth;
-}
+  html {
+    scroll-behavior: smooth;
+  }
 
-body {
-  margin: 0;
-  font-family: var(--font-sans);
-  color: var(--color-navy);
-  background: #ffffff;
-}
+  body {
+    margin: 0;
+    font-family: var(--font-sans);
+    color: var(--color-navy);
+    background: #ffffff;
+  }
 
-a {
-  color: var(--color-orange);
-  text-decoration: none;
-}
+  a {
+    color: var(--color-orange);
+    text-decoration: none;
+  }
 
-a:hover {
-  color: var(--color-orange-hover);
-}
+  a:hover {
+    color: var(--color-orange-hover);
+  }
 
-a:focus-visible {
-  outline: 3px solid var(--color-orange);
-  outline-offset: 3px;
-  border-radius: 6px;
+  a:focus-visible {
+    outline: 3px solid var(--color-orange);
+    outline-offset: 3px;
+    border-radius: 6px;
+  }
 }

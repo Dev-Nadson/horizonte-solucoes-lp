@@ -6,7 +6,8 @@ import {
   SectionHeaderLabel,
   SectionHeaderTitle,
 } from "./ui/SectionHeader";
-import { IconBuilding, IconGraduation, IconPerson } from "./ui/icons";
+import { IconBuilding, IconGraduation } from "./ui/icons";
+import { UserPlus } from "lucide-react";
 
 type IconProps = { size?: number; color?: string };
 
@@ -22,7 +23,7 @@ const audiences: Audience[] = [
   {
     title: "Pessoas",
     text: "Usuários e famílias que buscam mais autonomia e qualidade de vida no dia a dia.",
-    Icon: IconPerson,
+    Icon: UserPlus,
     iconBg: "bg-[#EAF0F5]",
     iconColor: "#1E3A5F",
   },
@@ -44,9 +45,9 @@ const audiences: Audience[] = [
 
 export function AudienceSection() {
   return (
-    <section id="publicos" className="py-[104px]">
+    <section id="publicos" className="py-26">
       <Container>
-        <SectionHeader className="mb-[52px] max-w-[640px]">
+        <SectionHeader className="mb-13 max-w-160">
           <SectionHeaderLabel>Para quem</SectionHeaderLabel>
           <SectionHeaderTitle>Quem caminha com a gente</SectionHeaderTitle>
         </SectionHeader>
@@ -58,12 +59,12 @@ export function AudienceSection() {
               className="px-8 py-9 shadow-[0_10px_30px_rgba(30,58,95,.05)]"
             >
               <div
-                className={`mb-[22px] flex h-14 w-14 items-center justify-center rounded-2xl ${iconBg}`}
+                className={`mb-5.5 flex h-14 w-14 items-center justify-center rounded-2xl ${iconBg}`}
               >
                 <Icon size={28} color={iconColor} />
               </div>
               <CardBody>
-                <CardTitle className="mb-[10px] text-xl">{title}</CardTitle>
+                <CardTitle className="mb-2.5 text-xl">{title}</CardTitle>
                 <CardText className="text-[15.5px] leading-[1.65]">{text}</CardText>
               </CardBody>
             </Card>

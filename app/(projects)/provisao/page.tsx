@@ -21,7 +21,7 @@ import { CTASection } from "@/components/CTASection";
 import { Footer } from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "PróVisão — Horizonte Inovação Assistiva",
+  title: "PróVisão - Horizonte Inovação Assistiva",
   description:
     "PróVisão: um módulo com sensores ultrassônicos e ESP32 que detecta obstáculos na altura do rosto e avisa por vibração ou som discreto.",
 };

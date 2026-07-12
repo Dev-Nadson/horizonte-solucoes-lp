@@ -25,7 +25,7 @@ export function SectionHeaderLabel({
   const color = variant === "dark" ? "text-amber" : "text-orange";
   return (
     <div
-      className={`mb-[14px] text-[12.5px] font-semibold uppercase tracking-[.16em] ${color} ${className}`}
+      className={`mb-3.5 text-[12.5px] font-semibold uppercase tracking-[.16em] ${color} ${className}`}
     >
       {children}
     </div>
@@ -64,7 +64,7 @@ export function SectionHeaderDescription({
   const color = variant === "dark" ? "text-[#B7C6D8]" : "text-muted";
   return (
     <p
-      className={`mt-[14px] text-lg font-normal leading-[1.7] ${color} ${className}`}
+      className={`mt-3.5 text-lg font-normal leading-[1.7] ${color} ${className}`}
     >
       {children}
     </p>

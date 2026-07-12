@@ -12,7 +12,7 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: "Horizonte Inovação Assistiva",
   description:
-    "Inovação assistiva para ampliar a autonomia de pessoas com deficiência — em parceria com escolas, instituições e órgãos públicos.",
+    "Inovação assistiva para ampliar a autonomia de pessoas com deficiência - em parceria com escolas, instituições e órgãos públicos.",
 };
 
 export default function RootLayout({

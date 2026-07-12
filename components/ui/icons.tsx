@@ -35,7 +35,7 @@ function Icon({
   );
 }
 
-/* ===== Landing Page — Para quem ===== */
+/* ===== Landing Page - Para quem ===== */
 
 export function IconPerson(props: IconProps) {
   return (
@@ -66,7 +66,7 @@ export function IconBuilding(props: IconProps) {
   );
 }
 
-/* ===== PróVisão — Como funciona ===== */
+/* ===== PróVisão - Como funciona ===== */
 
 export function IconMic(props: IconProps) {
   return (
@@ -105,7 +105,7 @@ export function IconSpeaker(props: IconProps) {
   );
 }
 
-/* ===== PróVisão — Benefícios ===== */
+/* ===== PróVisão - Benefícios ===== */
 
 export function IconShield(props: IconProps) {
   return (
@@ -144,7 +144,7 @@ export function IconShuffle(props: IconProps) {
   );
 }
 
-/* ===== PróVisão — Para quem (lista) ===== */
+/* ===== PróVisão - Para quem (lista) ===== */
 
 export function IconCheck(props: IconProps) {
   return (
