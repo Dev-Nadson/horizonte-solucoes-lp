@@ -17,14 +17,14 @@ const specs: Spec[] = [
 
 export function SpecsSection() {
   return (
-    <section id="specs" className="bg-surface py-26">
+    <section id="specs" className="bg-surface py-16 md:py-26">
       <Container>
-        <SectionHeader className="mb-12 max-w-165">
+        <SectionHeader className="mb-10 max-w-165 md:mb-12">
           <SectionHeaderLabel>Especificações técnicas</SectionHeaderLabel>
           <SectionHeaderTitle>O que há dentro do PróVisão</SectionHeaderTitle>
         </SectionHeader>
 
-        <div className="grid grid-cols-4 gap-5">
+        <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {specs.map(({ label, value, note }) => (
             <Card key={label} className="rounded-[18px] p-6.5">
               <div className="mb-2.5 text-[13px] font-semibold uppercase tracking-[.1em] text-[#9FB0C2]">

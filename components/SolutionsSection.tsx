@@ -15,9 +15,9 @@ const cardShadow = "shadow-[0_14px_40px_rgba(30,58,95,.06)]";
 
 export function SolutionsSection() {
   return (
-    <section id="solucoes" className="bg-surface py-26">
+    <section id="solucoes" className="bg-surface py-16 md:py-26">
       <Container>
-        <SectionHeader className="mb-13 max-w-160">
+        <SectionHeader className="mb-10 max-w-160 md:mb-13">
           <SectionHeaderLabel>Nossas soluções</SectionHeaderLabel>
           <SectionHeaderTitle>Projetos que abrem caminhos</SectionHeaderTitle>
           <SectionHeaderDescription>
@@ -25,7 +25,7 @@ export function SolutionsSection() {
           </SectionHeaderDescription>
         </SectionHeader>
 
-        <div className="grid grid-cols-2 gap-7">
+        <div className="grid grid-cols-1 gap-7 md:grid-cols-2">
           {/* Viseira Assistiva */}
           <Card className={`flex flex-col overflow-hidden ${cardShadow}`}>
             <CardMedia className="h-57.5 overflow-hidden bg-[linear-gradient(150deg,#EAF0F5,#DCE6EE)]">
@@ -51,8 +51,8 @@ export function SolutionsSection() {
                 Dispositivo vestível que amplia a autonomia no dia a dia, projetado
                 com foco em conforto, acessibilidade e uso intuitivo.
               </CardText>
-              <Link href="/provisao" className="text-[15px] font-semibold text-orange">
-                Saber mais →
+              <Link href="/provisao" className="text-[15px] font-semibold text-orange underline decoration-2 underline-offset-2">
+                Saiba mais →
               </Link>
             </CardBody>
           </Card>

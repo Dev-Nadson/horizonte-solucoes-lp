@@ -33,9 +33,9 @@ export function SectionHeaderLabel({
 }
 
 const titleSizes: Record<number, string> = {
-  36: "text-[36px]",
-  38: "text-[38px]",
-  40: "text-[40px]",
+  36: "text-[26px] md:text-[36px]",
+  38: "text-[27px] md:text-[38px]",
+  40: "text-[28px] md:text-[40px]",
 };
 
 /** Título principal da seção (h2). */
@@ -64,7 +64,7 @@ export function SectionHeaderDescription({
   const color = variant === "dark" ? "text-[#B7C6D8]" : "text-muted";
   return (
     <p
-      className={`mt-3.5 text-lg font-normal leading-[1.7] ${color} ${className}`}
+      className={`mt-3.5 text-base md:text-lg font-normal leading-[1.7] ${color} ${className}`}
     >
       {children}
     </p>

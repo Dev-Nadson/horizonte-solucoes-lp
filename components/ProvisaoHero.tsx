@@ -9,7 +9,7 @@ export function ProvisaoHero() {
       className="relative overflow-hidden bg-[linear-gradient(160deg,#F4F8FB_0%,#FFFFFF_62%)]"
     >
       <div className="absolute -right-30 -top-30 h-115 w-115 rounded-full bg-[radial-gradient(circle_at_40%_40%,rgba(222,138,62,.16),transparent_70%)]" />
-      <div className="relative mx-auto grid max-w-295 grid-cols-[1.05fr_.95fr] items-center gap-14 px-8 pb-23 pt-20">
+      <div className="relative mx-auto grid max-w-295 grid-cols-1 items-center gap-10 px-5 pb-14 pt-12 md:grid-cols-[1.05fr_.95fr] md:gap-14 md:px-8 md:pb-23 md:pt-20">
         <div>
           <Badge
             dotColor="#EBAE5E"
@@ -17,18 +17,18 @@ export function ProvisaoHero() {
           >
             Em fase de testes · Piloto
           </Badge>
-          <h1 className="m-0 mb-2.5 text-[60px] font-semibold leading-[1.04] tracking-[-.02em] text-navy">
+          <h1 className="m-0 mb-2.5 text-[44px] font-semibold leading-[1.06] tracking-[-.02em] text-navy sm:text-[52px] md:text-[60px] md:leading-[1.04]">
             PróVisão
           </h1>
-          <div className="mb-5.5 text-[19px] font-semibold text-orange">
+          <div className="mb-5.5 text-[17px] font-semibold text-orange md:text-[19px]">
             Percepção acima da bengala
           </div>
-          <p className="m-0 mb-8.5 max-w-130 text-[19px] font-normal leading-[1.65] text-muted">
+          <p className="m-0 mb-8.5 max-w-130 text-[16px] font-normal leading-[1.65] text-muted md:text-[19px]">
             Um módulo que usa sensores ultrassônicos e um ESP32 para detectar
             obstáculos na altura do rosto - e avisar por vibração ou som discreto,
             antes do impacto.
           </p>
-          <div className="flex flex-wrap gap-3.5">
+          <div className="flex justify-center lg:justify-start flex-wrap gap-3.5">
             <Button href="#contato" variant="primary">
               Solicite uma demonstração
             </Button>

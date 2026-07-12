@@ -50,16 +50,16 @@ const benefits: Benefit[] = [
 
 export function BenefitsSection() {
   return (
-    <section id="beneficios" className="bg-surface py-26">
+    <section id="beneficios" className="bg-surface py-16 md:py-26">
       <Container>
-        <SectionHeader className="mb-13 max-w-165">
+        <SectionHeader className="mb-10 max-w-165 md:mb-13">
           <SectionHeaderLabel>No dia a dia</SectionHeaderLabel>
           <SectionHeaderTitle>
             Mais segurança, sem abrir mão da rotina
           </SectionHeaderTitle>
         </SectionHeader>
 
-        <div className="grid grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
           {benefits.map(({ title, text, Icon, iconBg, iconColor }) => (
             <div
               key={title}

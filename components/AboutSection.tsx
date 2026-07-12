@@ -7,9 +7,9 @@ import {
 
 export function AboutSection() {
   return (
-    <section id="sobre" className="py-26">
+    <section id="sobre" className="py-16 md:py-26">
       <Container>
-        <div className="grid grid-cols-[.85fr_1.15fr] items-center gap-16">
+        <div className="grid grid-cols-1 items-center gap-8 md:grid-cols-[.85fr_1.15fr] md:gap-16">
           <SectionHeader>
             <SectionHeaderLabel>Quem somos</SectionHeaderLabel>
             <SectionHeaderTitle>Inovação com propósito humano</SectionHeaderTitle>

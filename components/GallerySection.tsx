@@ -15,9 +15,9 @@ const items = [
 
 export function GallerySection() {
   return (
-    <section id="galeria" className="bg-surface py-25">
+    <section id="galeria" className="bg-surface py-16 md:py-25">
       <Container>
-        <SectionHeader className="mb-11 max-w-165">
+        <SectionHeader className="mb-9 max-w-165 md:mb-11">
           <SectionHeaderLabel>Galeria</SectionHeaderLabel>
           <SectionHeaderTitle>Veja de perto</SectionHeaderTitle>
           <SectionHeaderDescription>
@@ -25,7 +25,7 @@ export function GallerySection() {
           </SectionHeaderDescription>
         </SectionHeader>
 
-        <div className="grid grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {items.map((item) => (
             <div
               key={item.src}

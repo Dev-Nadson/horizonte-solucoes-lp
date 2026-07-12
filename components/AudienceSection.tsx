@@ -45,14 +45,14 @@ const audiences: Audience[] = [
 
 export function AudienceSection() {
   return (
-    <section id="publicos" className="py-26">
+    <section id="publicos" className="py-16 md:py-26">
       <Container>
-        <SectionHeader className="mb-13 max-w-160">
+        <SectionHeader className="mb-10 max-w-160 md:mb-13">
           <SectionHeaderLabel>Para quem</SectionHeaderLabel>
           <SectionHeaderTitle>Quem caminha com a gente</SectionHeaderTitle>
         </SectionHeader>
 
-        <div className="grid grid-cols-3 gap-7">
+        <div className="grid grid-cols-1 gap-7 sm:grid-cols-2 lg:grid-cols-3">
           {audiences.map(({ title, text, Icon, iconBg, iconColor }) => (
             <Card
               key={title}

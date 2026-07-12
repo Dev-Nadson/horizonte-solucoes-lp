@@ -16,7 +16,7 @@ const partners = [
 
 export function PartnersSection() {
   return (
-    <section id="parceiros" className="bg-surface py-21">
+    <section id="parceiros" className="bg-surface py-14 md:py-21">
       <Container className="text-center">
         <div className="mb-8 text-[12.5px] font-semibold uppercase tracking-[.16em] text-orange">
           Parceiros &amp; apoiadores

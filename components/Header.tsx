@@ -1,5 +1,9 @@
+"use client";
+
 import type { ReactNode } from "react";
+import { useState } from "react";
 import Link from "next/link";
+import { IconMenu, IconClose } from "./ui/icons";
 
 type WithChildren = { children: ReactNode; className?: string };
 
@@ -7,7 +11,7 @@ type WithChildren = { children: ReactNode; className?: string };
 export function Header({ children }: WithChildren) {
   return (
     <header className="sticky top-0 z-50 border-b border-line bg-white/90 backdrop-blur-[10px]">
-      <nav className="mx-auto flex max-w-295 items-center justify-between px-8 py-4">
+      <nav className="relative mx-auto flex max-w-295 items-center justify-between px-5 py-4 md:px-8">
         {children}
       </nav>
     </header>
@@ -47,9 +51,43 @@ export function HeaderSubtitle({ children }: WithChildren) {
   );
 }
 
-/** Container da navegação à direita. */
+/**
+ * Container da navegação à direita.
+ * No desktop mostra os links em linha; no celular/tablet mostra um botão
+ * hambúrguer que abre um painel com os mesmos links.
+ */
 export function HeaderNav({ children }: WithChildren) {
-  return <div className="flex items-center gap-7.5">{children}</div>;
+  const [open, setOpen] = useState(false);
+
+  return (
+    <>
+      {/* Links em linha (desktop) */}
+      <div className="hidden items-center gap-7.5 md:flex">{children}</div>
+
+      {/* Botão hambúrguer (mobile/tablet) */}
+      <button
+        type="button"
+        aria-label={open ? "Fechar menu" : "Abrir menu"}
+        aria-expanded={open}
+        onClick={() => setOpen((v) => !v)}
+        className="flex items-center justify-center rounded-lg p-1.5 text-navy md:hidden"
+      >
+        {open ? <IconClose size={26} /> : <IconMenu size={26} />}
+      </button>
+
+      {/* Painel de navegação (mobile/tablet) */}
+      {open && (
+        <div
+          onClick={() => setOpen(false)}
+          className="absolute inset-x-0 top-full border-b border-line bg-white/95 backdrop-blur-[10px] md:hidden"
+        >
+          <div className="mx-auto flex max-w-295 flex-col items-start gap-5 px-5 py-6">
+            {children}
+          </div>
+        </div>
+      )}
+    </>
+  );
 }
 
 /** Link de navegação (âncora). */
@@ -63,7 +101,7 @@ export function HeaderNavLink({
   return (
     <a
       href={href}
-      className="text-[14.5px] font-medium text-muted hover:text-muted"
+      className="text-[15px] font-medium text-muted hover:text-muted md:text-[14.5px]"
     >
       {children}
     </a>

@@ -50,9 +50,9 @@ const steps: Step[] = [
 
 export function HowItWorksSection() {
   return (
-    <section id="tecnologia" className="py-26">
+    <section id="tecnologia" className="py-16 md:py-26">
       <Container>
-        <SectionHeader className="mb-14 max-w-165">
+        <SectionHeader className="mb-10 max-w-165 md:mb-14">
           <SectionHeaderLabel>A tecnologia por trás</SectionHeaderLabel>
           <SectionHeaderTitle>Três etapas, em fração de segundo</SectionHeaderTitle>
           <SectionHeaderDescription>
@@ -60,7 +60,7 @@ export function HowItWorksSection() {
           </SectionHeaderDescription>
         </SectionHeader>
 
-        <div className="grid grid-cols-3 gap-7">
+        <div className="grid grid-cols-1 gap-7 sm:grid-cols-2 lg:grid-cols-3">
           {steps.map(({ number, title, text, Icon, iconBg, iconColor }) => (
             <Card
               key={number}

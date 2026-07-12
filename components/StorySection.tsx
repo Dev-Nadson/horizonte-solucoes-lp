@@ -8,20 +8,20 @@ const paragraphs = [
 
 export function StorySection() {
   return (
-    <section id="historia" className="py-26">
+    <section id="historia" className="py-16 md:py-26">
       <Container>
         <div className="mx-auto max-w-190">
           <div className="mb-3.5 text-center text-[12.5px] font-semibold uppercase tracking-[.16em] text-orange">
             A história
           </div>
-          <h2 className="m-0 mb-8.5 text-center text-[38px] font-semibold leading-[1.14] tracking-[-.01em] text-navy">
+          <h2 className="m-0 mb-8.5 text-center text-[27px] font-semibold leading-[1.14] tracking-[-.01em] text-navy md:text-[38px]">
             Como tudo começou
           </h2>
-          <div className="flex flex-col gap-5.5 border-l-[3px] border-line pl-8">
+          <div className="flex flex-col gap-5.5 border-l-[3px] border-line pl-5 md:pl-8">
             {paragraphs.map((p, i) => (
               <p
                 key={i}
-                className="m-0 text-lg font-normal leading-[1.8] text-muted"
+                className="m-0 text-base font-normal leading-[1.8] text-muted md:text-lg"
               >
                 {p}
               </p>

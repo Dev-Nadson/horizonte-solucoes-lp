@@ -32,16 +32,16 @@ const cards: ProblemCard[] = [
 
 export function ProblemSection() {
   return (
-    <section id="problema" className="bg-navy-deep px-8 py-25">
-      <div className="mx-auto grid max-w-295 grid-cols-2 items-center gap-16">
+    <section id="problema" className="bg-navy-deep px-5 py-16 md:px-8 md:py-25">
+      <div className="mx-auto grid max-w-295 grid-cols-1 items-center gap-8 md:grid-cols-2 md:gap-16">
         <div>
           <div className="mb-4 text-[12.5px] font-semibold uppercase tracking-[.16em] text-amber">
             O problema
           </div>
-          <h2 className="m-0 mb-5.5 text-[40px] font-semibold leading-[1.12] tracking-[-.01em] text-white">
+          <h2 className="m-0 mb-5.5 text-[28px] font-semibold leading-[1.12] tracking-[-.01em] text-white md:text-[40px]">
             Metade do corpo fica desprotegida
           </h2>
-          <p className="m-0 text-lg font-normal leading-[1.75] text-[#B7C6D8]">
+          <p className="m-0 text-base font-normal leading-[1.75] text-[#B7C6D8] md:text-lg">
             A bengala é uma ferramenta essencial - mas ela varre o chão. Galhos,
             placas, espelhos de caminhão, prateleiras e portas entreabertas: tudo o
             que está acima da cintura passa despercebido.

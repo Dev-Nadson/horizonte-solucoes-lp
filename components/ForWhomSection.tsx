@@ -15,9 +15,9 @@ const items = [
 
 export function ForWhomSection() {
   return (
-    <section id="paraquem" className="py-26">
+    <section id="paraquem" className="py-16 md:py-26">
       <Container>
-        <div className="grid grid-cols-[.9fr_1.1fr] items-center gap-14">
+        <div className="grid grid-cols-1 items-center gap-8 md:grid-cols-[.9fr_1.1fr] md:gap-14">
           <SectionHeader>
             <SectionHeaderLabel>Para quem é indicada</SectionHeaderLabel>
             <SectionHeaderTitle size={36}>
